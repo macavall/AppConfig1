@@ -1,0 +1,23 @@
+{
+    "version": "2.0",
+  "logging": {
+    "logLevel": {
+      "default": "Trace",
+      "Microsoft": "Trace",
+      "Microsoft.Hosting.Lifetime": "Trace",
+      "Microsoft.Extensions.Configuration.AzureAppConfiguration": "Trace",
+      "Microsoft.Extensions.Configuration": "Trace",
+      "Microsoft.Azure.AppConfiguration.Functions.Worker": "Trace",
+      "Microsoft.Azure.WebJobs.Extensions.AzureAppConfiguration": {
+        "level": "Trace" // Set the logging level to "Trace" for verbose tracing
+      }
+    },
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    }
+  }
+}
